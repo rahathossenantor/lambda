@@ -63,6 +63,24 @@ header{
 .menu-btn{
     margin-left: 10px;
 }
+
+/* Food section */
+#about{
+    background: url("../images/bg-2.png") no-repeat center;
+    background-size: cover;
+    padding: 3.9rem 0;
+}
+#about .about-food h3{
+    font-size: 2.5rem;
+    color: #cc9900;
+    font-family: 'Yeseva One', cursive;
+}
+#about .about-food p{
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
+
 /* Media Queries for Responsiveness */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
@@ -72,10 +90,22 @@ header{
 @media (min-width: 576px) {}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    #about .about-food{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    #about .about-food p:nth-child(3){
+        text-align: justify;
+    }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    header nav .socials{
+        display: none;
+    }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
