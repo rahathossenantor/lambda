@@ -6,6 +6,15 @@
     padding: 0;
     outline: 0;
 }
+h3{
+    font-size: 2.5rem;
+    font-family: 'Yeseva One', cursive;
+}
+p{
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
 
 /* font-family: 'Gentium Book Basic', serif;
 font-family: 'Lato', sans-serif;
@@ -16,7 +25,6 @@ font-family: 'Yeseva One', cursive; */
 header{
     background: url("../images/banner.png") no-repeat center;
     background-size: cover;
-    padding-bottom: 8rem;
 }
 .nav-link{
     font-family: 'Gentium Book Basic', serif;
@@ -36,11 +44,12 @@ header{
 /* Banner section */
 #banner{
     color: #ffffff;
+    padding: 6rem 0;
 }
 #banner h1{
     font-size: 5rem;
     font-family: 'Yeseva One', cursive;
-    margin: 4rem 0 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 #banner a{
     color: #ffffff;
@@ -71,21 +80,52 @@ header{
     padding: 3.9rem 0;
 }
 #about .about-food h3{
-    font-size: 2.5rem;
     color: #cc9900;
-    font-family: 'Yeseva One', cursive;
 }
-#about .about-food p{
-    color: #4c4c4c;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1rem;
-}
+
+/* Infinite rotation animation */
+/* Safari and Chrome */
+@-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+  }
 
 /* Igredients section */
 #igredients{
     background: url("../images/igredients-bg.png") no-repeat center;
     background-size: cover;
-    padding: 6.2rem 0;
+    padding: 3.9rem 0;
 }
 .igredients-content{
     color: #ffffff;
@@ -93,28 +133,65 @@ header{
     border: 2px solid #201c1afe;
     padding: 5rem 4rem;
 }
-.igredients-content h3{
-    font-size: 2.5rem;
-    font-family: 'Yeseva One', cursive;
-}
 .igredients-content p{
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1rem;
+    color: #ffffff;
 }
 .ingredients-imgs{
-    padding: 2rem 0 0.5rem 0;
+    padding-top: 1.5rem;
+}
+
+/* Menu section */
+#menu{
+    background: url("../images/menu-bg.png") no-repeat center;
+    background-size: cover;
+    padding: 3.9rem 0;
+}
+.menu-content{
+    padding: 0 2rem;
+}
+.menu-content h3{
+    color: #cc9900;
+}
+.menu-content span{
+    color: #cc9900;
+    font-size: 1.5rem;
+    font-family: 'Yeseva One', cursive;
+}
+.menu-content p:nth-child(2){
+    text-align: center;
+}
+.menu-content p{
+    text-align: left;
+}
+.menu-box{
+    border-bottom: 1px solid #dab33e;
+}
+.spacial-offer{
+    background-color: #d3b662;
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    padding: 3px 7px;
+}
+.box-with-border{
+    border: 1px solid #dab33e;
+    border-top: none;
+    padding: 0 10px;
+    margin-bottom: 16px;
+}
+.box-with-border p{
+    text-align: left !important;
 }
 
 /* Media Queries for Responsiveness */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
-@media (min-width: 320px) {}
+@media (min-width: 320px) and (max-width: 575px) {}
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) and (max-width: 767px) {}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
     #about .about-food{
         text-align: center;
         margin-bottom: 2rem;
@@ -125,14 +202,14 @@ header{
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     header nav .socials{
         display: none;
     }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) and (max-width: 1399px) {}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}

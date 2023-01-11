@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lambda</title>
-    <!-- CDN Links -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
 
     <!-- Local Links (CSS) -->
     <link rel="stylesheet" href="./css/boxicons.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <!-- <link rel="stylesheet" href="./css/fontawesome.min.css"> -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
     <!-- Header section -->
     <header>
+
+        <!-- Navbar section -->
         <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Logo"></a>
@@ -38,13 +39,13 @@
                             <a class="nav-link" href="#igredients">Igredients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
+                            <a class="nav-link" href="#reviews">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reservations</a>
+                            <a class="nav-link" href="#reservations">Reservations</a>
                         </li>
                         <li class="nav-item socials">
                             <div class="nav-link social-icons">
@@ -57,12 +58,14 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Banner section -->
         <section id="banner">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-12 text-center">
                         <h1>the right ingredients for the right food</h1>
-                        <p><img src="./images/hr-image-1.png" alt="hr-image-1"></p>
+                        <p><img class="img-fluid" src="./images/hr-image-1.png" alt="Divider"></p>
                         <a class="book-btn" href="#">BOOK A TABLE</a>
                         <a class="menu-btn" href="#">SEE THE MENU</a>
                     </div>
@@ -73,6 +76,7 @@
 
     <!-- Main section -->
     <main>
+
         <!-- About section -->
         <section id="about">
             <div class="container">
@@ -80,7 +84,7 @@
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 d-flex align-items-center">
                         <div class="about-food">
                             <h3>Just the right food</h3>
-                            <p><img src="./images/food-hr.png" alt="Food-hr"></p>
+                            <p><img class="img-fluid" src="./images/divider.png" alt="Food-hr"></p>
                             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
                             <div class="cook">
                                 <img src="./images/cook.png" alt="Cook">
@@ -88,7 +92,7 @@
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 d-flex align-items-center justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-md-center">
-                        <div class="food-img">
+                        <div class="food-img rotating">
                             <img class="img-fluid w-100" src="./images/dish.png" alt="Dish">
                         </div>
                     </div>
@@ -104,13 +108,122 @@
                     <div class="col-xxl-6">
                         <div class="igredients-content text-center">
                             <h3>Fine ingredients</h3>
-                            <p><img src="./images/igredients-div.png" alt="Divider"></p>
+                            <p><img class="img-fluid" src="./images/igredients-div.png" alt="Divider"></p>
                             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
                             <div class="ingredients-imgs">
                                 <img src="./images/paddy.png" alt="Paddy">
                                 <img src="./images/chilli.png" alt="Chilli">
                                 <img src="./images/bun.png" alt="Bun">
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu section -->
+        <section id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <!-- Appetisers -->
+                        <div class="menu-content text-center">
+                            <h3>Appetisers</h3>
+                            <p><img class="img-fluid" src="./images/divider.png" alt="Food-hr"></p>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Tzatsiki</span>
+                                <span>$3.99</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Aubergine Salad</span>
+                                <span>$5.50</span>
+                            </div>
+                            <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Tzatsiki</span>
+                                <span>$5.25</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                        </div>
+
+                        <!-- Salads -->
+                        <div class="menu-content text-center mt-5">
+                            <h3>Salads</h3>
+                            <p><img class="img-fluid" src="./images/divider.png" alt="Food-hr"></p>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Olive Special</span>
+                                <span>$5.99</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                            
+                            <div class="menu-box d-flex justify-content-end">
+                                <span class="spacial-offer">Special</span>
+                            </div>
+                            <div class="box-with-border">
+                                <div class="menu-box d-flex justify-content-between">
+                                    <span>Greek Salad</span>
+                                    <span>$5.50</span>
+                                </div>
+                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            </div>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Gusto Salad</span>
+                                <span>$5.25</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <!-- Starters -->
+                        <div class="menu-content text-center">
+                            <h3>Starters</h3>
+                            <p><img class="img-fluid" src="./images/divider.png" alt="Food-hr"></p>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Haloumi</span>
+                                <span>$3.99</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Spinach Pie</span>
+                                <span>$5.50</span>
+                            </div>
+                            <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                        </div>
+
+                        <!-- Main dishes -->
+                        <div class="menu-content text-center mt-5">
+                            <h3>Main Dishes</h3>
+                            <p><img class="img-fluid" src="./images/divider.png" alt="Food-hr"></p>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Cornish Mackerel</span>
+                                <span>$5.99</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                            
+                            <div class="menu-box d-flex justify-content-end">
+                                <span class="spacial-offer">Special</span>
+                            </div>
+                            <div class="box-with-border">
+                                <div class="menu-box d-flex justify-content-between">
+                                    <span>Roast Lamb</span>
+                                    <span>$5.50</span>
+                                </div>
+                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            </div>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Fried Chicken</span>
+                                <span>$5.25</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                            <div class="menu-box d-flex justify-content-between">
+                                <span>Pastitsio</span>
+                                <span>$5.99</span>
+                            </div>
+                            <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
                         </div>
                     </div>
                 </div>
