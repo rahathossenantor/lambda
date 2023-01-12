@@ -42,7 +42,7 @@
                             <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#reviews">Reviews</a>
+                            <a class="nav-link" href="#review">Reviews</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#reservations">Reservations</a>
@@ -106,7 +106,7 @@
                 <div class="row">
                     <div class="col-xxl-6"></div>
                     <div class="col-xxl-6">
-                        <div class="igredients-content text-center">
+                        <div class="igredients-content text-center text-light">
                             <h3>Fine ingredients</h3>
                             <p><img class="img-fluid" src="./images/igredients-div.png" alt="Divider"></p>
                             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
@@ -224,6 +224,74 @@
                                 <span>$5.99</span>
                             </div>
                             <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Review section -->
+        <section id="review">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="review-content text-center text-light common-bg">
+                            <h3>Guest Reviews</h3>
+                            <p><img class="img-fluid" src="./images/igredients-div.png" alt="Divider"></p>
+                            <p><i class='bx bxs-quote-alt-left' ></i> If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! <i class='bx bxs-quote-alt-right' ></i></p>
+                            <p>- food inc, New York</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservations section -->
+        <section id="reservation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3">
+                        <div class="reserv-food-img">
+                            <img class="img-fluid w-100" src="./images/reserv-food-1.png" alt="Food">
+                        </div>
+                    </div>
+                    <div class="col-xxl-3">
+                        <div class="reserv-food-img">
+                            <img class="img-fluid w-100" src="./images/reserv-food-2.png" alt="Food">
+                        </div>
+                    </div>
+                    <div class="col-xxl-6">
+                        <div class="reserv-content about-food text-center">
+                            <h3>Just the right food</h3>
+                            <p><img class="img-fluid" src="./images/divider.png" alt="Food-hr"></p>
+                            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>                           
+                            <p>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+                            <form action="#">
+                                <div class="form-content d-flex">
+                                    <div class="input-box">
+                                        <p><label for="name">Name:</label></p>
+                                        <p><input type="text" id="name" placeholder="your name *"></p>
+                                        <p><label for="date">Date</label></p>
+                                        <p><input type="date" name="date" id="date"></p>
+                                    </div>
+                                    <div class="input-box">
+                                        <p><label for="email">e-Mail:</label></p>
+                                        <p><input type="text" id="email" placeholder="your e-mail *"></p>
+                                        <p><label for="party">Party Number</label></p>
+                                        <p>
+                                            <select name="party-number" id="party">
+                                                <option hidden value="">--select--</option>
+                                                <option value="Normal">Normal</option>
+                                                <option value="General">General</option>
+                                                <option value="Special">Special</option>
+                                                <option value="Super">Super</option>
+                                                <option value="Stars">Stars</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button type="submit">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>

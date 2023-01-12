@@ -79,12 +79,16 @@ header{
     background-size: cover;
     padding: 3.9rem 0;
 }
-#about .about-food h3{
+.about-food h3{
     color: #cc9900;
+}
+.form-content{
+    text-align: left;
 }
 
 /* Infinite rotation animation */
 /* Safari and Chrome */
+/*
 @-webkit-keyframes rotating {
     from {
       -webkit-transform: rotate(0deg);
@@ -120,6 +124,7 @@ header{
     -o-animation: rotating 6s linear infinite;
     animation: rotating 6s linear infinite;
   }
+  */
 
 /* Igredients section */
 #igredients{
@@ -127,8 +132,7 @@ header{
     background-size: cover;
     padding: 3.9rem 0;
 }
-.igredients-content{
-    color: #ffffff;
+.igredients-content, .common-bg {
     background-color: #201c1ab6;
     border: 2px solid #201c1afe;
     padding: 5rem 4rem;
@@ -180,6 +184,37 @@ header{
 }
 .box-with-border p{
     text-align: left !important;
+}
+
+/* Review section */
+#review{
+    background: url("../images/review-bg.png") no-repeat center;
+    background-size: cover;
+    padding: 3.9rem 0;
+}
+.review-content{
+    width: 45vw;
+    margin: auto;
+}
+.review-content p{
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: 'Gentium Book Basic', serif;
+}
+.review-content p:last-child{
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+}
+.review-content p i{
+    color: #9a9b99;
+    font-size: 1.8rem;
+}
+
+/* Reservations section */
+#reservation{
+    background: url("../images/bg-2.png") no-repeat center;
+    background-size: cover;
+    padding: 3.9rem 0;
 }
 
 /* Media Queries for Responsiveness */
