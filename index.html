@@ -9,7 +9,7 @@
     <!-- Local Links (CSS) -->
     <link rel="stylesheet" href="./css/boxicons.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <!-- <link rel="stylesheet" href="./css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -45,7 +45,7 @@
                             <a class="nav-link" href="#review">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#reservations">Reservations</a>
+                            <a class="nav-link" href="#reservation">Reservations</a>
                         </li>
                         <li class="nav-item socials">
                             <div class="nav-link social-icons">
@@ -266,31 +266,30 @@
                             <p><img class="img-fluid" src="./images/divider.png" alt="Food-hr"></p>
                             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>                           
                             <p>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
-                            <form action="#">
-                                <div class="form-content d-flex">
-                                    <div class="input-box">
-                                        <p><label for="name">Name:</label></p>
-                                        <p><input type="text" id="name" placeholder="your name *"></p>
-                                        <p><label for="date">Date</label></p>
-                                        <p><input type="date" name="date" id="date"></p>
-                                    </div>
-                                    <div class="input-box">
-                                        <p><label for="email">e-Mail:</label></p>
-                                        <p><input type="text" id="email" placeholder="your e-mail *"></p>
-                                        <p><label for="party">Party Number</label></p>
-                                        <p>
-                                            <select name="party-number" id="party">
-                                                <option hidden value="">--select--</option>
-                                                <option value="Normal">Normal</option>
-                                                <option value="General">General</option>
-                                                <option value="Special">Special</option>
-                                                <option value="Super">Super</option>
-                                                <option value="Stars">Stars</option>
-                                            </select>
-                                        </p>
-                                    </div>
+
+                            <!-- Form section -->
+                            <form action="https://formspree.io/f/xjvdvqry" method="POST">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="your name *"> <br class="h"/>
+                                
+                                <label for="email">Mail:</label>
+                                <input type="text" id="email" name="email" placeholder="your e-mail *"> <br/>
+
+                                <label for="date">Date:</label>
+                                <input type="date" name="date" id="date"> <br class="h"/>
+
+                                <label for="party">Party Type:</label>
+                                <select name="party-type" id="party">
+                                    <option hidden value="">party type *</option>
+                                    <option value="Normal">Normal</option>
+                                    <option value="General">General</option>
+                                    <option value="Special">Special</option>
+                                    <option value="Super">Super</option>
+                                    <option value="Stars">Stars</option>
+                                </select>
+                                <div class="submit-btn">
+                                    <button class="btn" type="submit">Book now!</button>
                                 </div>
-                                <button type="submit">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -300,7 +299,50 @@
     </main>
 
     <!-- Footer section -->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-content text-center text-light">
+                        <h5>About Us</h5>
+                        <p><img class="img-fluid" src="./images/foot-div.png" alt="Foot-div"></p>
+                        <p class="text-light mb-0">Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café. Lamda the best restaurant in town</p>
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-content text-center text-light">
+                        <h5>Opening Hours</h5>
+                        <p><img class="img-fluid" src="./images/foot-div.png" alt="Foot-div"></p>
+                        <p class="text-light"><b>Mon-Thu:</b> 7:00am-8:00pm <br/>
+                        <b>Fri-Sun:</b> 7:00am-10:00pm</p>
+                        <p>
+                            <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+                            <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+                            <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+                            <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+                            <a href="#"><i class="fa-brands fa-cc-stripe"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-content text-center text-light">
+                        <h5>Our Location</h5>
+                        <p><img class="img-fluid" src="./images/foot-div.png" alt="Foot-div"></p>
+                        <p class="text-light"><b>19th Paradise Street Sitia <br/>
+                        128 Meserole Avenue</b></p>
+                        <p>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Local Links (JS) -->
     <script src="./js/bootstrap.bundle.min.js"></script>

@@ -82,10 +82,6 @@ header{
 .about-food h3{
     color: #cc9900;
 }
-.form-content{
-    text-align: left;
-}
-
 /* Infinite rotation animation */
 /* Safari and Chrome */
 /*
@@ -124,8 +120,7 @@ header{
     -o-animation: rotating 6s linear infinite;
     animation: rotating 6s linear infinite;
   }
-  */
-
+*/
 /* Igredients section */
 #igredients{
     background: url("../images/igredients-bg.png") no-repeat center;
@@ -216,6 +211,57 @@ header{
     background-size: cover;
     padding: 3.9rem 0;
 }
+form{
+    margin-top: 3rem;
+}
+label{
+    color: #c9a131;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+}
+input, select, #party{
+    padding: 3px 20px;
+    margin-bottom: 1.2rem;
+    outline: 0;
+    border: 1px solid #4c4c4c;
+    transition: all 0.8s;
+}
+::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #4c4c4c83;
+}
+input:focus{
+    border: 1px solid #c9a131;
+}
+.btn{
+    background-color: #c9a131;
+    color: #ffffff;
+    padding: 4px 3rem;
+    border-radius: 0;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn:hover{
+    background-color: #c9a131;
+    color: #ffffff;
+}
+
+/* Footer section */
+footer{
+    padding: 3.8rem 0;
+    background-color: #000000;
+}
+.footer-content h5{
+    font-family: 'Yeseva One', cursive;
+    font-size: 27px;
+}
+.footer-content p i{
+    color: #c3c4c2;
+    font-size: 1.5rem;
+    margin: 5px;
+}
 
 /* Media Queries for Responsiveness */
 /* // X-Small devices (portrait phones, less than 576px)
@@ -234,6 +280,9 @@ header{
     #about .about-food p:nth-child(3){
         text-align: justify;
     }
+    form .h{
+        display: none;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -241,10 +290,21 @@ header{
     header nav .socials{
         display: none;
     }
+    form .h{
+        display: none;
+    }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399px) {}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    form .h{
+        display: none;
+    }
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    form .h{
+        display: none;
+    }
+}
