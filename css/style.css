@@ -1,40 +1,35 @@
 /* Universal code */
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans:ital@0;1&family=Yeseva+One&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     outline: 0;
 }
-h3{
+h3 {
     font-size: 2.5rem;
     font-family: 'Yeseva One', cursive;
 }
-p{
+p {
     color: #4c4c4c;
     font-family: 'Lato', sans-serif;
     font-size: 1.1rem;
 }
 
-/* font-family: 'Gentium Book Basic', serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Yeseva One', cursive; */
-
 /* Header section */
-header{
+header {
     background: url("../images/banner.png") no-repeat center;
     background-size: cover;
 }
-.nav-link{
+.nav-link {
     font-family: 'Gentium Book Basic', serif;
     color: #ffffff;
     font-size: 1.3rem;
 }
-.nav-item{
+.nav-item {
     padding: 0 1rem;
 }
-.social-icons a{
+.social-icons a {
     color: #dab33e;
     font-size: 1.3rem;
     display: inline-block;
@@ -42,16 +37,16 @@ header{
 }
 
 /* Banner section */
-#banner{
+#banner {
     color: #ffffff;
     padding: 6rem 0;
 }
-#banner h1{
+#banner h1 {
     font-size: 5rem;
     font-family: 'Yeseva One', cursive;
     margin-bottom: 1.5rem;
 }
-#banner a{
+#banner a {
     color: #ffffff;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
@@ -61,28 +56,28 @@ header{
     border: 1px solid #ffffff;
     transition: all 0.9s;
 }
-#banner a:hover{
+#banner a:hover {
     background-color: rgba(0, 0, 0, 0.318);
     border: 1px solid #000000;
     transform: rotateZ(360deg);
 }
-.book-btn{
+.book-btn {
     margin-right: 10px;
 }
-.menu-btn{
+.menu-btn {
     margin-left: 10px;
 }
 
 /* About section */
-#about{
+#about {
     background: url("../images/bg-2.png") no-repeat center;
     background-size: cover;
     padding: 3.9rem 0;
 }
-.about-food h3{
+.about-food h3 {
     color: #cc9900;
 }
-/* Infinite rotation animation */
+/*--- Infinite rotation animation ---*/
 /* Safari and Chrome */
 /*
 @-webkit-keyframes rotating {
@@ -121,121 +116,125 @@ header{
     animation: rotating 6s linear infinite;
   }
 */
+
 /* Igredients section */
-#igredients{
+#igredients {
     background: url("../images/igredients-bg.png") no-repeat center;
     background-size: cover;
     padding: 3.9rem 0;
 }
-.igredients-content, .common-bg {
+.igredients-content,
+.common-bg {
     background-color: #201c1ab6;
     border: 2px solid #201c1afe;
     padding: 5rem 4rem;
 }
-.igredients-content p{
+.igredients-content p {
     color: #ffffff;
 }
-.ingredients-imgs{
+.ingredients-imgs {
     padding-top: 1.5rem;
 }
 
 /* Menu section */
-#menu{
+#menu {
     background: url("../images/menu-bg.png") no-repeat center;
     background-size: cover;
     padding: 3.9rem 0;
 }
-.menu-content{
+.menu-content {
     padding: 0 2rem;
 }
-.menu-content h3{
+.menu-content h3 {
     color: #cc9900;
 }
-.menu-content span{
+.menu-content span {
     color: #cc9900;
     font-size: 1.5rem;
     font-family: 'Yeseva One', cursive;
 }
-.menu-content p:nth-child(2){
+.menu-content p:nth-child(2) {
     text-align: center;
 }
-.menu-content p{
+.menu-content p {
     text-align: left;
 }
-.menu-box{
+.menu-box {
     border-bottom: 1px solid #dab33e;
 }
-.spacial-offer{
+.spacial-offer {
     background-color: #d3b662;
     color: #ffffff !important;
     font-size: 1rem !important;
     padding: 3px 7px;
 }
-.box-with-border{
+.box-with-border {
     border: 1px solid #dab33e;
     border-top: none;
     padding: 0 10px;
     margin-bottom: 16px;
 }
-.box-with-border p{
+.box-with-border p {
     text-align: left !important;
 }
 
 /* Review section */
-#review{
+#review {
     background: url("../images/review-bg.png") no-repeat center;
     background-size: cover;
     padding: 3.9rem 0;
 }
-.review-content{
+.review-content {
     width: 45vw;
     margin: auto;
 }
-.review-content p{
+.review-content p {
     color: #ffffff;
     font-size: 1.3rem;
     font-family: 'Gentium Book Basic', serif;
 }
-.review-content p:last-child{
+.review-content p:last-child {
     font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
 }
-.review-content p i{
+.review-content p i {
     color: #9a9b99;
     font-size: 1.8rem;
 }
 
 /* Reservations section */
-#reservation{
+#reservation {
     background: url("../images/bg-2.png") no-repeat center;
     background-size: cover;
     padding: 3.9rem 0;
 }
-form{
+form {
     margin-top: 3rem;
 }
-label{
+label {
     color: #c9a131;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin-left: 10px;
 }
-input, select, #party{
+input,
+select,
+#party {
     padding: 3px 20px;
     margin-bottom: 1.2rem;
     outline: 0;
     border: 1px solid #4c4c4c;
     transition: all 0.8s;
 }
-::placeholder{
+::placeholder {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     color: #4c4c4c83;
 }
-input:focus{
+input:focus {
     border: 1px solid #c9a131;
 }
-.btn{
+.btn {
     background-color: #c9a131;
     color: #ffffff;
     padding: 4px 3rem;
@@ -243,21 +242,21 @@ input:focus{
     font-size: 1.1rem;
     font-family: 'Open Sans', sans-serif;
 }
-.btn:hover{
+.btn:hover {
     background-color: #c9a131;
     color: #ffffff;
 }
 
 /* Footer section */
-footer{
+footer {
     padding: 3.8rem 0;
     background-color: #000000;
 }
-.footer-content h5{
+.footer-content h5 {
     font-family: 'Yeseva One', cursive;
     font-size: 27px;
 }
-.footer-content p i{
+.footer-content p i {
     color: #c3c4c2;
     font-size: 1.5rem;
     margin: 5px;
@@ -266,45 +265,121 @@ footer{
 /* Media Queries for Responsiveness */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
-@media (min-width: 320px) and (max-width: 575px) {}
+@media (min-width: 320px) and (max-width: 575px) {
+    .navbar img{
+        width: 115px;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .nav-link {
+        font-size: 1.3rem;
+        padding: 0.3rem 0;
+    }
+    #banner {
+        padding: 1rem 0;
+    }
+    #banner h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    #banner a {
+        display: inline-block;
+        padding: 0.4rem 1.1rem;
+    }
+    .book-btn {
+        margin-right: 0;
+    }
+    .menu-btn {
+        margin: 1rem 0;
+    }
+
+    #about{
+        text-align: center;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+
+    .igredients-content {
+        padding: 1rem;
+    }
+
+    .menu-content {
+        padding: 0 0.5rem;
+    }
+
+    .review-content {
+        width: 90vw;
+        padding: 1.5rem 0.4rem;
+        margin: auto;
+    }
+    .review-content p {
+        font-size: 1.2rem;
+    }
+    .review-content p:last-child {
+        font-size: 1rem;
+    }
+    .reserv-food-img {
+        margin-bottom: 3rem;
+    }
+
+    label {
+        margin-left: 0;
+    }
+
+    footer {
+        padding:  2.5rem 0 3.2rem 0;
+    }
+    footer h5 {
+        margin-top: 1rem;
+        font-size: 25px !important;
+    }
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-    #about .about-food{
+    #about .about-food {
         text-align: center;
         margin-bottom: 2rem;
     }
-    #about .about-food p:nth-child(3){
+    #about .about-food p:nth-child(3) {
         text-align: justify;
     }
-    form .h{
+    form .h {
         display: none;
     }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
-    header nav .socials{
+    header nav .socials {
         display: none;
     }
-    form .h{
+    form .h {
         display: none;
     }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399px) {
-    form .h{
+    .xsd {
+        display: none;
+    }
+    form .h {
         display: none;
     }
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    form .h{
+    .xsd {
+        display: none;
+    }
+    form .h {
         display: none;
     }
 }

@@ -250,12 +250,12 @@
         <section id="reservation">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-3">
+                    <div class="col-xxl-3 col-sm-6 col-12">
                         <div class="reserv-food-img">
                             <img class="img-fluid w-100" src="./images/reserv-food-1.png" alt="Food">
                         </div>
                     </div>
-                    <div class="col-xxl-3">
+                    <div class="col-xxl-3 col-sm-6 col-12">
                         <div class="reserv-food-img">
                             <img class="img-fluid w-100" src="./images/reserv-food-2.png" alt="Food">
                         </div>
@@ -268,29 +268,31 @@
                             <p>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
 
                             <!-- Form section -->
-                            <form action="https://formspree.io/f/xjvdvqry" method="POST">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" placeholder="your name *"> <br class="h"/>
-                                
-                                <label for="email">Mail:</label>
-                                <input type="text" id="email" name="email" placeholder="your e-mail *"> <br/>
-
-                                <label for="date">Date:</label>
-                                <input type="date" name="date" id="date"> <br class="h"/>
-
-                                <label for="party">Party Type:</label>
-                                <select name="party-type" id="party">
-                                    <option hidden value="">party type *</option>
-                                    <option value="Normal">Normal</option>
-                                    <option value="General">General</option>
-                                    <option value="Special">Special</option>
-                                    <option value="Super">Super</option>
-                                    <option value="Stars">Stars</option>
-                                </select>
-                                <div class="submit-btn">
-                                    <button class="btn" type="submit">Book now!</button>
-                                </div>
-                            </form>
+                            <div id="form">
+                                <form action="https://formspree.io/f/xjvdvqry" method="POST">
+                                    <label for="name">Name:</label> <br class="xsd"/>
+                                    <input type="text" id="name" name="name" placeholder="your name *"> <br class="h"/>
+                                    
+                                    <label for="email">Mail:</label> <br class="xsd"/>
+                                    <input type="text" id="email" name="email" placeholder="your e-mail *"> <br/>
+    
+                                    <label for="date">Date:</label> <br class="xsd"/>
+                                    <input type="date" name="date" id="date"> <br class="h"/>
+    
+                                    <label for="party">Party Type:</label> <br class="xsd"/>
+                                    <select name="party-type" id="party">
+                                        <option hidden value="">party type *</option>
+                                        <option value="Normal">Normal</option>
+                                        <option value="General">General</option>
+                                        <option value="Special">Special</option>
+                                        <option value="Super">Super</option>
+                                        <option value="Stars">Stars</option>
+                                    </select>
+                                    <div class="submit-btn">
+                                        <button class="btn" type="submit">Book now!</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
