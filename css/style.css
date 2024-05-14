@@ -81,7 +81,7 @@ header {
 /*--- Infinite rotation animation ---*/
 /* Safari and Chrome */
 
-/* @-webkit-keyframes rotating {
+@-webkit-keyframes rotating {
     from {
       -webkit-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -115,7 +115,7 @@ header {
     -ms-animation: rotating 6s linear infinite;
     -o-animation: rotating 6s linear infinite;
     animation: rotating 6s linear infinite;
-  } */
+  }
 
 /* Igredients section */
 #igredients {
